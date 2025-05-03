@@ -46,8 +46,8 @@ export const MapComponent = ({lat, lng}) => {
 	const fetchData = async (lat, lng) => {
 		try {
 			const apiKey = 'YOUR_NESHAN_API_KEY';
-			const myLocationLat = '35.763057';
-			const myLocationLng = '51.419387';
+			const myLocationLat = 'x';
+			const myLocationLng = 'y';
 
 			// Fetch map image
 			const mapResponse = await fetch(`https://api.neshan.org/v4/static?key=${apiKey}&type=neshan&width=${screenWidth > 720 ? 600 : 300}&height=${heightParam}&zoom=12&center=${lat}%2C${lng}&markerToken=27818.dkEsFiPf5`);
